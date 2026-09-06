@@ -5,6 +5,7 @@
 
 html, body{
     background-image: url(../assets/background.png);
+    background-size: 200px;
     background-color: rgb(0, 0, 0);
     width: 100vw;
     height: 100vh;
@@ -70,5 +71,5 @@ img{
 .title{
     justify-content: center;
     display: flex;
-    
+    font-size: large
 }
