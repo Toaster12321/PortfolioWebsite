@@ -3,28 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Antonio Crawford</title>
+    <title>Portfolio Website</title>
     <link rel="stylesheet" href="css/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="title">
-        <h1>
-            Antonio Crawford
-        </h1>
-    </div>
+
+    <nav>
+        <div class = "logo-box">
+            <img src = "assets/scutum_logo.png" alt = "Scutum Logo">
+            <a href = "#" class = "logo">
+                <span>
+                    &nbsp;Antonio
+                    <br>
+                    Crawford
+                </span>
+            </a>
+        </div>
+
+        <i class='bx bx-menu' id = "menu"></i>
+
+        <ul class = "links">
+            <a href = "#about">> About </a>
+            <a href = "#projects" >> Projects </a>
+            <a href = "#resume">> Resume </a>
+        </ul>
 
 
-    <p class="container">
-        Hello! My name is Antonio Crawford. I graduated from <a href="https://www.csusb.edu/">California State University San Bernardino</a> with a degree in computer science. I first became interested in studying computer science when I took a high school AP Computer Science course focusing on the Java programming language. As a long standing player and programmer my main goal is to pursue my interest and passion in video game development, design and programming.
-        Click below to view my projects or my résumé! <a href="https://github.com/Toaster12321">Personal Github Here!</a>
-    </p>
+        <a href = "#resume" class = "btn"> ??? </a>
+    </nav>
 
-    
+    <section id="home"> 
+        <img src = "assets/me.jpg" alt = "Scutum Logo">
+        <div class = "info-box">
+            <h1><span> Hello, I'm Antonio</span></h1>
+            <h3><span>Game/ Software Developer</span>
+                Based in Rancho Cucamonga, California</h3>
+            <p>
+                I graduated from <a href="https://www.csusb.edu/">California State University San Bernardino</a> in 2025 with a <b>bachelor's degree in Computer Science.</b> 
+                I first became interested in studying computer science when I took a high school AP Computer Science course focusing on the Java programming language.
+                As a long standing player and programmer my main goal is to pursue my interest and passion in video game development, design and programming.
+                
+            </p>
+        </div>
 
-    <div class="container_links">
-        
-        <a href="resume.html">Résumé</a>
-        <a href="developedApplications.html">Projects</a>
-    </div>
+        <div class="btn-box">
+            <div class ="btn">Hire</div>
+            <div class = "btn">Contact Me</div>
+    </section>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
