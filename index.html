@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
     <script src="https://kit.fontawesome.com/363a3b1438.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -60,11 +62,19 @@
 
             <div class = "about-info">
                 <h1><span>About Me</span></h1>
+                <br>
                 <p>
-                    ...
+                    My name is Antonio Crawford, I'm a 23 year old game and software developer. I'm currently experienced with work using game engines: <b>Unity and Godot for 1+ years.</b>
+                    I have extensive knowledge in <b>scripting game objects using languages: C#, C++ and GDScript.</b> I'm <b>familiar with version control technologies such as Git </b> and have learned how to create
+                    <b>engaing and useful UI/UX designs in my projects. </b>
+                    Game/Software design and development is an outlet for my creativity and allows me to be able to express my passion for art through games and media.
+                    I enjoy the challenge of translating internal ideas into real life through code and expanding my skillset.
+                    <br>
+                    <br>
+                    I'm currently looking for professional work or other opportunities to jumpstart my career in the Game or Software Development industries.
                 </p>
             </div>
-
+            <br>
             <h2><span>Skills</span></h2>
 
             <div class="skills">
@@ -98,7 +108,6 @@
                     </li>
                 </ul>
 
-                <div class="skills">
                 <ul class="skills-list">
                     <li>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Godot logo" width="25" height="25">
@@ -113,13 +122,103 @@
                         <span> Python </span>
                     </li>
                 </ul>
+
             </div>
         </div>
-        <img src = "assets/scutum_title.png" alt = "Scutum Title">
+        
+        <div class="swiper">
+  
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><img src = "assets/scutum_title.png" alt = "Scutum Title"></div>
+                <div class="swiper-slide"><img src = "assets/gaia_title.png" alt = "GAIA Title"></div>
+
+            </div>
+  
+            <div class="swiper-pagination"></div>
+
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1 class = "header"><span>Projects</span></h1>
+        
+        <div class = "projects-container">
+            <div class="box">
+                <h1><span>Scutum</span></h1>
+
+                <p>
+                    Scutum
+                </p>
+                <div class="box-swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide"><img src = "assets/scutum.png" alt = "Scutum Images"></div>
+
+                    </div>
+        
+                    <div class="swiper-pagination"></div>
+
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <h1><span>GAIA</span></h1>
+
+                <p>
+                    GAIA
+                </p>
+                <div class="box-swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide"><img src = "assets/sh_picture.png" alt = "Gaia Images"></div>
+                        <div class="swiper-slide"><img src = "assets/sh_picture2.png" alt = "Gaia Images"></div>
+
+                    </div>
+        
+                    <div class="swiper-pagination"></div>
+
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
 
     <script src="js/script.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        });
+    </script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 *{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS', Verdana, Arial, sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -189,11 +189,14 @@ p a:hover {
   color: rgb(6, 0, 86);
 }
 
-ul.skills-list{
+.skills ul{
     display: flex;
-    flex-direction: row;
     gap: 3em;
     font-size: 1.8em;
+    align-items: baseline;
+    color: white;
+    opacity: 0.8;
+    font-weight: 500;
 }
 
 span.skills-icon{
@@ -201,10 +204,116 @@ span.skills-icon{
     color: rgb(92, 154, 119);
 }
 
+.skills ul li{
+    display: flex;
+    gap: 0.5em;
+    transition: 0.3s ease-in-out;
+}
+
+.skills ul li:hover{
+    transform: translateX(10px);
+}
+
+.about-box h2{
+    font-size: 2.5em;
+}
+
 #about{
     background-color: rgb(22, 55, 67);
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    gap: 10em;
+}
+
+.about-box h1{
+    font-size: 5em;
+}
+
+.about-box p{
+    color: white;
+    opacity: 0.8;
+    font-size: 1.2em;
+}
+
+.about-box{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2em;
+}
+
+.swiper{
+    width: 350%;
+    height: fit-content;
+    border-radius: 1em;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper .swiper-button-prev{
+    color: white;
+}
+
+.swiper .swiper-button-next{
+    color: white;
+}
+
+.swiper .swiper-pagination-bullet-active{
+    background: white;
+}
+
+b{
+    font-weight: 700;
+    font-size: 1.05em;
+    color: rgb(215, 219, 255);
+}
+
+#projects{
+    background-color:  rgb(21, 51, 62) ;
+}
+
+.header{
+    text-align: center;
+    font-size: 5em;
+    margin: 0.5em 0;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+}
+
+.box{
+    border: 3px solid black;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 5em;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 3em;
+    gap: 2em;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.box:hover{
+    border: 3px solid rgb(50, 50, 50);
+}
+
+.box p{
+    opacity: 0.8;
+}
+
+.box h1{
+    font-size: 2em;
+}
+
+.box img{
+    min-width: 25px;
+    border-radius: 0.5em;
 }
